@@ -1,15 +1,18 @@
 # simple_edge_detection_flutter
 
-A new Flutter plugin project.
+A simple edge detection plugin utilizing OpenCV
+This is mostly a copy of https://github.com/flutter-clutter/flutter-simple-edge-detection
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
+If you just want to test it, go ahead and clone this repository. Before you can run the example, you need to download the OpenCV library. Download the iOS pack and Android on https://opencv.org/releases/. Afterwards, copy the respective files into the directory of this plugin where project_root is the root folder of this plugin:
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+# OpenCV for Android
+´´´
+cp -R sdk/native/jni/include project_root
+cp sdk/native/libs/* project_root/android/src/main/jniLibs/*
+´´´
+# OpenCV for iOS
+´´´
+cp -R opencv2.framework project_root/ios
+´´´

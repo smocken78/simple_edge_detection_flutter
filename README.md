@@ -10,7 +10,7 @@ If you just want to test it, go ahead and clone this repository. Before you can 
 # OpenCV for Android
 ```
 cp -R sdk/native/jni/include project_root
-cp sdk/native/libs/* project_root/android/src/main/jniLibs/*
+cp -R sdk/native/libs/* project_root/android/src/main/jniLibs/*
 ```
 # OpenCV for iOS
 ```
